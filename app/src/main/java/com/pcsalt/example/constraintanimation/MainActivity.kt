@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onTransitionEnd(transition: Transition) {
+                    btn.text = if (set) getString(R.string.to_rounded_corner) else getString(R.string.to_circle)
                 }
 
                 override fun onTransitionCancel(transition: Transition) {}

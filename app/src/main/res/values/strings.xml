@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Constraint Animation</string>
+    <string name="to_circle">To Circle</string>
+    <string name="to_rounded_corner">To Rounded Corner</string>
 </resources>
