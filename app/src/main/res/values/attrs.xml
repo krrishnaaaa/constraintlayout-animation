@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedCornerImageView">
+        <attr name="rciv_border_width" format="dimension" />
+        <attr name="rciv_border_color" format="color" />
+        <attr name="rciv_border_overlay" format="boolean" />
+        <attr name="rciv_circle_background_color" format="color" />
+        <attr name="rciv_top_left_radius" format="dimension" />
+        <attr name="rciv_top_right_radius" format="dimension" />
+        <attr name="rciv_bottom_left_radius" format="dimension" />
+        <attr name="rciv_bottom_right_radius" format="dimension" />
+        <attr name="rciv_circle" format="boolean" />
+    </declare-styleable>
+</resources>
