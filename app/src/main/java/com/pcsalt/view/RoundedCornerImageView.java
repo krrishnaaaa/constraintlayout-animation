@@ -307,6 +307,9 @@ public class RoundedCornerImageView extends ImageView {
 
     public void setIsCircle(boolean isCircle) {
         this.mIsCircle = isCircle;
+        if (!isCircle) {
+            setBorderWidth(0);
+        }
     }
 
     @Override
