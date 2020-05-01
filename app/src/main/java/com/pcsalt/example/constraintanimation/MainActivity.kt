@@ -1,16 +1,13 @@
 package com.pcsalt.example.constraintanimation
 
 import android.os.Bundle
-import android.support.constraint.ConstraintSet
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
 import android.transition.ChangeBounds
 import android.transition.Scene
 import android.transition.Transition
 import android.transition.TransitionManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintSet
 import kotlinx.android.synthetic.main.activity_main.*
-
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -43,10 +40,6 @@ class MainActivity : AppCompatActivity() {
             changeBounds.addListener(object : Transition.TransitionListener {
                 override fun onTransitionStart(transition: Transition) {
                     iv.setIsCircle(set)
-                    if (set) {
-                        iv.borderWidth = 20
-                        iv.borderColor = ContextCompat.getColor(this@MainActivity, R.color.colorPrimary)
-                    }
                     iv.invalidate()
                 }
 
